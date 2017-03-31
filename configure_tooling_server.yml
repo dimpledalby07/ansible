@@ -1,6 +1,8 @@
 ---
 - name: Configure Tooling Server
   hosts: localhost
+  vars:
+     packer_version: "0.12.1" 
   sudo: True
   tasks:
     - name: install git only if it is not already installed
