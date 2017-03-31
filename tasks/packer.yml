@@ -1,4 +1,8 @@
 ---
+- name: Install Unzip
+    yum:
+        name=unzip
+        state=present
 - name: Download Packer
   get_url: url=https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_amd64.zip
            dest=/usr/local/src/packer_{{ packer_version }}_linux_amd64.zip
