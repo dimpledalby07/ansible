@@ -14,4 +14,5 @@
     - name: install curl only if it is not already present
       yum:
         name=curl
-        state=present         
+        state=present
+    - include: tasks/packer.yml        
