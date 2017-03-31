@@ -7,3 +7,11 @@
       yum:
         name=git
         state=present
+    - name: install wget only if it is not already present
+      yum:
+        name=wget
+        state=present
+    - name: install curl only if it is not already present
+      yum:
+        name=curl
+        state=present         
