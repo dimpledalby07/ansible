@@ -1,6 +1,6 @@
 ---
 - name: Configure Tooling Server
-  hosts: ci-server
+  hosts: localhost
   sudo: True
   tasks:
     - name: install git only if it is not already installed
